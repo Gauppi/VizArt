@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>VizArt</title>
+    <!-- url: https://svgwave.in/-->
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                <stop offset="5%" stop-color="#7c67dd"></stop>
+                <stop offset="95%" stop-color="#fbcbab"></stop>
+            </linearGradient>
+        </defs>
+        <path
+            d="M 0,400 C 0,400 0,133 0,133 C 83.93589743589746,161.59230769230768 167.87179487179492,190.18461538461537 252,173 C 336.1282051282051,155.81538461538463 420.4487179487179,92.85384615384618 504,85 C 587.5512820512821,77.14615384615382 670.3333333333335,124.39999999999998 737,144 C 803.6666666666665,163.60000000000002 854.2179487179485,155.54615384615386 928,150 C 1001.7820512820515,144.45384615384614 1098.7948717948718,141.4153846153846 1188,139 C 1277.2051282051282,136.5846153846154 1358.602564102564,134.7923076923077 1440,133 C 1440,133 1440,400 1440,400 Z"
+            stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53"
+            class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path>
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                <stop offset="5%" stop-color="#7c67dd"></stop>
+                <stop offset="95%" stop-color="#fbcbab"></stop>
+            </linearGradient>
+        </defs>
+        <path
+            d="M 0,400 C 0,400 0,266 0,266 C 75.84102564102562,296.99743589743593 151.68205128205125,327.9948717948718 229,314 C 306.31794871794875,300.0051282051282 385.1128205128206,241.01794871794874 464,238 C 542.8871794871794,234.98205128205126 621.8666666666667,287.9333333333333 698,288 C 774.1333333333333,288.0666666666667 847.4205128205128,235.248717948718 925,225 C 1002.5794871794872,214.751282051282 1084.451282051282,247.07179487179485 1171,261 C 1257.548717948718,274.92820512820515 1348.774358974359,270.4641025641026 1440,266 C 1440,266 1440,400 1440,400 Z"
+            stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path>
+    </svg>
+    <img class="header-img" src="/public/VizArtLogo.png"></img>
+    <h4 class="slogan"> einfach und schnell Zitationen suchen </h4>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <p id="intro"><strong> VizArt</strong> ist ein Tool, welches Forschern das Betrachten von Zitier-Verbindungen in
+        Fachliteratur erleichtert. Der Name steht für die <strong> Visualisierung</strong> von <strong>
+            Artikeln</strong>. <br><br>Forscher nutzen diesen Service, um eine Artikel-Menge für eine Untersuchung
+        aufzubereiten - beispielsweise Untersuchung ihres Abdeckungsgrads durch Reviews. <br>Dafür werden
+        Publikationsdaten aus PubMed und Zitationsmerkmale aus iCite extrahiert und in einem geeigneten
+        Graphnetzwerk-Format zusammengeführt. Exportiert, kann die Datei z.B. in Gephi einer SNA (Social Network
+        Analysis) unterzogen werden.</p>
+    <div class="box">
+        <label for="file-upload" class="fileupload"> 1a) Laden Sie eine Liste von PMIDs (.txt) oder
+            Zitations-Informationen (.csv) hoch:</label>
+        <br>
+        <br>
+        <tr>
+            <!-- Fileupload -->
+            <td>
+                <input type="file" id="fileToLoad" class="inputfile">
+                <div class="arrowpopup" onclick="showTooltip('tooltipFileupload')">&#9432
+                    <!--Alternative icons: &#128712 &#8505 &#9432-->
+                    <span class="tooltipText" id="tooltipFileupload">Bitte fügen Sie hier den gesamten Datensatz im
+                        (.csv) oder (.txt) Format ein. </span>
+                </div>
+            </td>
+            <td>
+                <input type="file" id="fileToLoadReview" class="inputfile">
+                <div class="arrowpopup" onclick="showTooltip('tooltipFileupload2')">&#9432
+                    <span class="tooltipText" id="tooltipFileupload2">(Optional) Liste mit Reviews, welche in der ersten
+                        Datei enthalten sind.</span>
+                </div>
+            </td>
+        </tr>
+    </div>
+    <br>
+    <br>
+    <div class="box">
+        <label>1b) PubMed (Advanced) Searchquery: </label>
+        <br>
+        <div id="divInputText">
+            <input type="text" id="sterm" class="inputsearch" name="search" value="tractor accidents" />
+            <div class="arrowpopup" onclick="showTooltip('tooltipPubmedSearchQuery')">&#9432
+                <!--Alternative icons: &#128712 &#8505 &#9432-->
+                <span class="tooltipText" id="tooltipPubmedSearchQuery">Die von der PubMed-Webseite gewohnte
+                    "translation" der Suchbegriffe erfolgt auch hier: Synonyme- und MeSH-Terms-Einbeziehung mittels
+                    PubMeds Automatic Term Mapping (ATM). <br>Um einen ausgefeilten ("advanced") Suchterm zu bauen (mit
+                    Filtern, AND/OR-Verknüpfungen, usw.), können Sie die Hilfestellung der PubMed-Webseite benützen.
+                    Klicken Sie dort auf den "Advanced"-Link unterhalb des Suchfelds um zum PubMed Advanced Search
+                    Builder zu gelangen.</span>
+            </div>
+
+        </div>
+     
+    </div>
+    <br>
+    <div class="box">
+        <label>2) Suche starten: </label>
+        <br>
+        <button id="btnsendquery" onclick="searchFileorText()" class="buttonUpload" role="button">Suchen</button>
+    </div>
+    <br>
+    <div id="loader">
+        <span class="loader"></span>
+    </div>
+    <h3 id="searchquery" class="center"> Sie suchen nach: ....</h3>
+    <div id="divOutput">
+        <br>
+        <div id="dataviz_basicZoom" class="center">
+        </div>
+        <p>
+            <br>
+            <h2 class="center"> Ergebnis:</h2>
+            <h2 class="center" id="nresultsPubArt"></h2>
+            <h2 class="center" id="nresultsZit"></h2>
+            <h2 class="center" id="nresultsRev"></h2>
+        </p>
+        <br>
+        <h3 id="interpretation" class="center">...</h3>
+        <br>
+        <div class="box">
+            <label>3) Attribute auswählen: </label>
+            <br>
+            <br>
+            <button id="filter-button" class="btn_fi_send">Attribute</button>
+            <!-- Filter (Parameter) Button -->
+            <div id="filter-container" class="filters">
+                <ul class="filters__list">
+                    <li>
+                        <button id="toggleAttributeSelection" onclick="setUnsetAttributes()" class="filter-btn">alle
+                            auswählen/abwählen</button>
+                        <button id="resetfilter" onclick="toggleAttributes()" class="filter-btn">Auswahl umkehren</button>
+
+                        <button id="applyfilter" onclick="setAttributes()" class="filter-btn"> Filter anwenden</button>
+    
+                    </li>
+                    <li>
+                        <input id="f1" type="checkbox" value="PMID" />
+                        <label for="attributes" class="attributes">PMID</label>
+                    </li>
+                    <li>
+                        <input id="f2" type="checkbox" value="Authors" />
+                        <label for="attributes" class="attributes">Autoren</label>
+                    </li>
+                    <li>
+                        <input id="f3" type="checkbox" value="Journal" />
+                        <label for="attributes" class="attributes">Journal</label>
+                    </li>
+                    <li>
+                        <input id="f4" type="checkbox" value="is_research_article" />
+                        <label for="attributes" class="attributes">is_research_art</label>
+                    </li>
+                    <li>
+                        <input id="f5" type="checkbox" value="relative_citation_ratio" />
+                        <label for="attributes" class="attributes">rCr</label>
+                    </li>
+                    <li>
+                        <input id="f6" type="checkbox" value="nih_percentile" />
+                        <label for="attributes" class="attributes">nih percentile</label>
+                    </li>
+                    <li>
+                        <input id="f7" type="checkbox" value="animal" />
+                        <label for="attributes" class="attributes">animal</label>
+                    </li>
+                    <li>
+                        <input id="f8" type="checkbox" value="citation_count" />
+                        <label for="attributes" class="attributes">citation count</label>
+                    </li>
+                    <li>
+                        <input id="f9" type="checkbox" value="expected_citation_per_year" />
+                        <label for="attributes" class="attributes">expected citations / year</label>
+                    </li>
+                    <li>
+                        <input id="f10" type="checkbox" value="field_citation_rate" />
+                        <label for="attributes" class="attributes">field citation rate</label>
+                    </li>
+                    <li>
+                        <input id="f11" type="checkbox" value="cited_by_clin" />
+                        <label for="attributes" class="attributes">cited by clin</label>
+                    </li>
+                    <li>
+                        <input id="f11" type="checkbox" value="cited_by" />
+                        <label for="attributes" class="attributes">cited by</label>
+                    </li>
+                    <li>
+                        <input id="f12" type="checkbox" value="references" />
+                        <label for="attributes" class="attributes">references</label>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="box">
+            <label> 4) Resultat exportieren:</label>
+            <a id="a1" download="graph.graphml"> Resultat exportieren</a>
+        </div>
+        <h2 id="pubart">PubMed Artikel</h2>
+        <ul id="output"></ul>
+    </div>
+
+    <footer>
+        <br>
+        <div id="outro" class="center">
+            <p>Authoren: David Gaupp & Christian Merz</p>
+            <p><a href="https://gitlab.ti.bfh.ch/gaupa1/revieWanted">Besuchen Sie unser GitLab</a></p>
+            <p><a href="mailto:david_G@hotmail.ch">Email</a></p>
+        </div>
+
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+            class="transition duration-300 ease-in-out delay-150">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                    <stop offset="5%" stop-color="#5e5df0"></stop>
+                    <stop offset="95%" stop-color="#fbcbab"></stop>
+                </linearGradient>
+            </defs>
+            <path
+                d="M 0,400 C 0,400 0,133 0,133 C 79.06153846153848,157.1102564102564 158.12307692307695,181.22051282051282 230,182 C 301.87692307692305,182.77948717948718 366.5692307692308,160.22820512820513 460,146 C 553.4307692307692,131.77179487179487 675.6,125.86666666666666 761,114 C 846.4,102.13333333333334 895.0307692307691,84.30512820512818 958,97 C 1020.9692307692309,109.69487179487182 1098.2769230769231,152.9128205128205 1181,164 C 1263.7230769230769,175.0871794871795 1351.8615384615384,154.04358974358973 1440,133 C 1440,133 1440,400 1440,400 Z"
+                stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53"
+                class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                    <stop offset="5%" stop-color="#5e5df0"></stop>
+                    <stop offset="95%" stop-color="#fbcbab"></stop>
+                </linearGradient>
+            </defs>
+            <path
+                d="M 0,400 C 0,400 0,266 0,266 C 53.71538461538461,272.25384615384615 107.43076923076922,278.5076923076923 196,283 C 284.5692307692308,287.4923076923077 407.9923076923077,290.2230769230769 494,280 C 580.0076923076923,269.7769230769231 628.5999999999999,246.60000000000002 702,259 C 775.4000000000001,271.4 873.6076923076923,319.37692307692305 964,316 C 1054.3923076923077,312.62307692307695 1136.9692307692308,257.89230769230767 1215,241 C 1293.0307692307692,224.1076923076923 1366.5153846153846,245.05384615384617 1440,266 C 1440,266 1440,400 1440,400 Z"
+                stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1"
+                class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+        </svg>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- Verlinkung der separaten JavaScript-Files -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="/src/script.js"></script>
+
+<!-- Zusätzliche JavaScript-Anweisungen, für basale Event-Funktionalitäten im HTML-->
+<script>
+    let button = document.getElementById("filter-button");
+    let container = document.getElementById("filter-container");
+    let input = document.querySelectorAll("input");
+
+    //Erstelle ein Eventlistener für eine Taste (gedrückt)
+    window.onkeyup = keyup;
+
+    //Fügt dem Texteingabefeld einen Eventlistener hinzu, damit Suche auch mittels Enter-Taste gestartet werden kann
+    document.getElementById("sterm").addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            search(document.getElementById('searchquery').innerHTML = document.getElementById('sterm').value.toString())
+        }
+    });
+
+    $(document).ready(function () {
+        let x = document.getElementById("divOutput");
+        x.style.display = "none";
+        x = document.getElementById("loader");
+        x.style.display = "none";
+    });
+
+    /**
+     * @name keyup - Event für Enter-Taste (Listener) nimmt den Text aus dem Inputfeld und startet die Suche (Funktion)
+     */
+    function keyup(e) {
+        if (e.keyCode == 13) {
+            console.log();
+            let res = search(document.getElementById("sterm").value);
+            console.log("Result: ", res);
+        }
+    }
+
+    //Filter funktionen
+    button.onclick = function (e) {
+        e.stopPropagation();
+        if (container.classList.contains("filters--active")) {
+            container.classList.remove("filters--active");
+        } else {
+            container.classList.add("filters--active");
+        }
+    };
+
+    container.onclick = function (e) {
+        e.stopPropagation();
+    };
+
+    window.onclick = function () {
+        container.classList.remove("filters--active");
+    };
+
+    for (var i = 0; i < input.length; i++) {
+        var currentInput = input[i];
+
+        currentInput.onclick = function () {
+            var isChecked = false;
+            for (var j = 0; j < input.length; j++) {
+                if (input[j].checked) {
+                    isChecked = true;
+                    break;
+                }
+            }
+
+            if (isChecked) {
+                button.classList.add("button--highlight");
+            } else {
+                button.classList.remove("button--highlight");
+            }
+        };
+    }
+
+
+
+</script>

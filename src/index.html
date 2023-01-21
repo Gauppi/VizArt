@@ -2,9 +2,13 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <!-- css icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>VizArt</title>
-    <!-- url: https://svgwave.in/-->
+    <link rel="icon" type="image/x-icon" href="icons/favicon_16.png">
+    <!-- Header Titelbild Welle url: https://svgwave.in/-->
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
         class="transition duration-300 ease-in-out delay-150">
         <defs>
@@ -28,89 +32,128 @@
             stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1"
             class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 200)"></path>
     </svg>
-    <img class="header-img" src="/public/VizArtLogo.png"></img>
-    <h4 class="slogan"> einfach und schnell Zitationen suchen </h4>
+
 </head>
 
 <body>
-    <header>
 
+
+    <header>
+        <!--Firefox-Browser benötigt die nachfolgenden Zeilenabsätze -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="header-img" src="logo.png" alt="VizArt Logo with a witch hat"></img>
+        <h4 class="slogan"> Einfach und schnell Zitationen suchen </h4>
     </header>
+    <!-- Block Beschreibung -->
     <p id="intro"><strong> VizArt</strong> ist ein Tool, welches Forschern das Betrachten von Zitier-Verbindungen in
         Fachliteratur erleichtert. Der Name steht für die <strong> Visualisierung</strong> von <strong>
             Artikeln</strong>. <br><br>Forscher nutzen diesen Service, um eine Artikel-Menge für eine Untersuchung
-        aufzubereiten - beispielsweise Untersuchung ihres Abdeckungsgrads durch Reviews. <br>Dafür werden
+        aufzubereiten - beispielsweise Untersuchung ihres Abdeckungsgrads durch Reviews. Dafür werden
         Publikationsdaten aus PubMed und Zitationsmerkmale aus iCite extrahiert und in einem geeigneten
         Graphnetzwerk-Format zusammengeführt. Exportiert, kann die Datei z.B. in Gephi einer SNA (Social Network
-        Analysis) unterzogen werden.</p>
+        Analysis) unterzogen werden. <br>Befolgen Sie hierfür die Schritte von 1) - 4). 
+        <br>Als Input können die CSV-Dateien aus PubMed verwendet werden 1a) oder unter 1b) können Suchbegriffe eingesetzt werden. </p>
     <div class="box">
-        <label for="file-upload" class="fileupload"> 1a) Laden Sie eine Liste von PMIDs (.txt) oder
-            Zitations-Informationen (.csv) hoch:</label>
+        <!-- 1. Box Datei hochladen -->
+        <label for="file-upload" class="fileupload"> 1a) Laden Sie ein PubMed-Suchresultat (.csv) hoch: [unbegrenzt]
+        </label> &nbsp;
         <br>
         <br>
         <tr>
-            <!-- Fileupload -->
+            <!-- Fileupload Primärdatensatz-->
             <td>
+                <label class="label_input">Ganzes Suchresultat:&nbsp;&emsp;</label>
                 <input type="file" id="fileToLoad" class="inputfile">
-                <div class="arrowpopup" onclick="showTooltip('tooltipFileupload')">&#9432
+                <div class="arrowpopup" id="arrow1">&#9432
                     <!--Alternative icons: &#128712 &#8505 &#9432-->
                     <span class="tooltipText" id="tooltipFileupload">Bitte fügen Sie hier den gesamten Datensatz im
-                        (.csv) oder (.txt) Format ein. </span>
+                        (.csv) Format ein. </span>
                 </div>
+                &nbsp;
+                <button id="btnreset" class="btnTrash"><i class="fa fa-trash"></i></button>
+                <br>
+
             </td>
+            <!-- Fileupload Reviews aus dem Primärendatensatz-->
+            <button id="btnadd" class="btn"><i class="fa fa-plus">&nbsp;&nbsp; Reviews hinzufügen</i></button>
             <td>
-                <input type="file" id="fileToLoadReview" class="inputfile">
-                <div class="arrowpopup" onclick="showTooltip('tooltipFileupload2')">&#9432
-                    <span class="tooltipText" id="tooltipFileupload2">(Optional) Liste mit Reviews, welche in der ersten
-                        Datei enthalten sind.</span>
+                <div id="uploadOption" style="display: none;">
+                    <label class="label_input">Reviews in Suchresultat: </label>
+                    <input type="file" id="fileToLoadReview" class="inputfileReview">    
+                    <div class="arrowpopup" id="arrow2">&#9432
+                        <span class="tooltipText" id="tooltipFileupload2">(Optional) Liste mit Reviews, welche in der
+                            ersten
+                            Datei enthalten sind.</span>
+                    </div>
+                    &nbsp;
+                    <button id="btnresetRev" class="btnTrash"><i class="fa fa-trash"></i></button>
+                    &nbsp;
+                    <button id="btndelete" class="btn"><i class="fa fa-minus"></i></button>
                 </div>
+
             </td>
         </tr>
     </div>
     <br>
     <br>
     <div class="box">
-        <label>1b) PubMed (Advanced) Searchquery: </label>
+         <!-- 2.  Suchterm auf PubMed eingeben (Limit 500) etwas unpräziser als 1a)-->
+        <label id="label1b" class="label_dropdown">1b) PubMed Suchanfrage: [Limit: 500 Artikel] &nbsp;&nbsp; &#128899;</label> &nbsp;&nbsp;
+        <div class="arrowpopup" id="arrow3">&#9432
+            <span class="tooltipText" id="tooltipPubmedSearchQuery">klicken Sie den Pfeil in 1b) an, um auf PubMed anhand von Suchbegriffen Artikel zu finden.</span>
+        </div>
         <br>
         <div id="divInputText">
-            <input type="text" id="sterm" class="inputsearch" name="search" value="tractor accidents" />
-            <div class="arrowpopup" onclick="showTooltip('tooltipPubmedSearchQuery')">&#9432
-                <!--Alternative icons: &#128712 &#8505 &#9432-->
-                <span class="tooltipText" id="tooltipPubmedSearchQuery">Die von der PubMed-Webseite gewohnte
-                    "translation" der Suchbegriffe erfolgt auch hier: Synonyme- und MeSH-Terms-Einbeziehung mittels
-                    PubMeds Automatic Term Mapping (ATM). <br>Um einen ausgefeilten ("advanced") Suchterm zu bauen (mit
-                    Filtern, AND/OR-Verknüpfungen, usw.), können Sie die Hilfestellung der PubMed-Webseite benützen.
-                    Klicken Sie dort auf den "Advanced"-Link unterhalb des Suchfelds um zum PubMed Advanced Search
-                    Builder zu gelangen.</span>
-            </div>
-
+            <input type="text" id="sterm" class="inputsearch" name="search" placeholder="Suchbegriffe" />
         </div>
-     
     </div>
     <br>
     <div class="box">
         <label>2) Suche starten: </label>
         <br>
-        <button id="btnsendquery" onclick="searchFileorText()" class="buttonUpload" role="button">Suchen</button>
+        <!-- Suche starten-Knopf-->
+        <button id="btnsendquery" class="buttonUpload" role="button">Suchen</button>
     </div>
     <br>
     <div id="loader">
+        <!-- Ladeanimation-->
         <span class="loader"></span>
     </div>
     <h3 id="searchquery" class="center"> Sie suchen nach: ....</h3>
     <div id="divOutput">
+        <!-- D3 SVG Graphen-->
         <br>
         <div id="dataviz_basicZoom" class="center">
+            <!-- Zoom Klasse von D3-->
+        </div>
+        <div class="knotenlegende"> 
+            <h3 class="knotenlegende_titel">Legende:</h3>
+            <label class ="knotenlegende_label" id = "labelref"style="color: #1F77B4; cursor: pointer;">Blaue Knoten:<br>Primärforschung-Artikel </label> 
+            <label class ="knotenlegende_label" style="color:#FF7F0E;">Orange Knoten:<br>mögliche Reviews  </label> 
+            <label class ="knotenlegende_label" style="color: #2CA02C;">Grüne Knoten:<br>Reviews </label> 
         </div>
         <p>
             <br>
-            <h2 class="center"> Ergebnis:</h2>
+            <h2 class="center" id="legende"> Ergebnis:</h2>
+            
             <h2 class="center" id="nresultsPubArt"></h2>
-            <h2 class="center" id="nresultsZit"></h2>
+            <h3 class="center" id="nresultsZit">
+                <div class="arrowpopup" id="arrow_results"></div>
+            </h3>
+            <div class="contnr_0Hght_cntr" id="centralizer">
+                <img class="results_img" id="nresultsZit_img" src="" alt="" style="height: 0px;">
+            </div>
+            <h2 class="center" id="nresultsgraph"></h2>
             <h2 class="center" id="nresultsRev"></h2>
+            
         </p>
         <br>
+        <!-- Empfehlung von VizArt für eine weitere Analyse resp. herunterladen des Ergebnisses -->
         <h3 id="interpretation" class="center">...</h3>
+        <br>
         <br>
         <div class="box">
             <label>3) Attribute auswählen: </label>
@@ -121,12 +164,9 @@
             <div id="filter-container" class="filters">
                 <ul class="filters__list">
                     <li>
-                        <button id="toggleAttributeSelection" onclick="setUnsetAttributes()" class="filter-btn">alle
-                            auswählen/abwählen</button>
-                        <button id="resetfilter" onclick="toggleAttributes()" class="filter-btn">Auswahl umkehren</button>
-
-                        <button id="applyfilter" onclick="setAttributes()" class="filter-btn"> Filter anwenden</button>
-    
+                        <button id="toggleAttributeSelection" class="filter-btn">alle auswählen/abwählen</button>
+                        <button id="resetfilter" class="filter-btn">Auswahl umkehren</button>
+                        <button id="applyfilter" class="filter-btn"> Filter anwenden</button>
                     </li>
                     <li>
                         <input id="f1" type="checkbox" value="PMID" />
@@ -180,23 +220,25 @@
                         <input id="f12" type="checkbox" value="references" />
                         <label for="attributes" class="attributes">references</label>
                     </li>
-                    <li>
-                        
-                    </li>
                 </ul>
             </div>
         </div>
         <br>
         <div class="box">
+            <!-- 4. Box Datei/ GraphML herunterladen-->
             <label> 4) Resultat exportieren:</label>
-            <a id="a1" download="graph.graphml"> Resultat exportieren</a>
+            <br>
+            <br>
+            <!-- download Link-->
+            <a id="a1" download="graph.graphml"> GraphML herunterladen</a>
         </div>
         <h2 id="pubart">PubMed Artikel</h2>
+        <!-- Unsortierte PubMed Suchresultatenliste -->
         <ul id="output"></ul>
     </div>
-
     <footer>
         <br>
+        <!-- Footer Informationen Lizenz fehlt noch!!!-->
         <div id="outro" class="center">
             <p>Authoren: David Gaupp & Christian Merz</p>
             <p><a href="https://gitlab.ti.bfh.ch/gaupa1/revieWanted">Besuchen Sie unser GitLab</a></p>
@@ -229,86 +271,8 @@
     </footer>
 
 </body>
-
-</html>
-
 <!-- Verlinkung der separaten JavaScript-Files -->
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="/src/script.js"></script>
-
-<!-- Zusätzliche JavaScript-Anweisungen, für basale Event-Funktionalitäten im HTML-->
-<script>
-    let button = document.getElementById("filter-button");
-    let container = document.getElementById("filter-container");
-    let input = document.querySelectorAll("input");
-
-    //Erstelle ein Eventlistener für eine Taste (gedrückt)
-    window.onkeyup = keyup;
-
-    //Fügt dem Texteingabefeld einen Eventlistener hinzu, damit Suche auch mittels Enter-Taste gestartet werden kann
-    document.getElementById("sterm").addEventListener("keyup", function (event) {
-        if (event.key === "Enter") {
-            search(document.getElementById('searchquery').innerHTML = document.getElementById('sterm').value.toString())
-        }
-    });
-
-    $(document).ready(function () {
-        let x = document.getElementById("divOutput");
-        x.style.display = "none";
-        x = document.getElementById("loader");
-        x.style.display = "none";
-    });
-
-    /**
-     * @name keyup - Event für Enter-Taste (Listener) nimmt den Text aus dem Inputfeld und startet die Suche (Funktion)
-     */
-    function keyup(e) {
-        if (e.keyCode == 13) {
-            console.log();
-            let res = search(document.getElementById("sterm").value);
-            console.log("Result: ", res);
-        }
-    }
-
-    //Filter funktionen
-    button.onclick = function (e) {
-        e.stopPropagation();
-        if (container.classList.contains("filters--active")) {
-            container.classList.remove("filters--active");
-        } else {
-            container.classList.add("filters--active");
-        }
-    };
-
-    container.onclick = function (e) {
-        e.stopPropagation();
-    };
-
-    window.onclick = function () {
-        container.classList.remove("filters--active");
-    };
-
-    for (var i = 0; i < input.length; i++) {
-        var currentInput = input[i];
-
-        currentInput.onclick = function () {
-            var isChecked = false;
-            for (var j = 0; j < input.length; j++) {
-                if (input[j].checked) {
-                    isChecked = true;
-                    break;
-                }
-            }
-
-            if (isChecked) {
-                button.classList.add("button--highlight");
-            } else {
-                button.classList.remove("button--highlight");
-            }
-        };
-    }
-
-
-
-</script>
+<script type="module" src="main.js"></script>
+</html>

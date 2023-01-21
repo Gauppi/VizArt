@@ -2,10 +2,10 @@
 <br />
 <div align="center">
   <a href="https://gitlab.ti.bfh.ch/gaupa1/revieWanted">
-    <img src="images/logo.png" alt="Logo" width="300" height="100">
+    <img src="images/logo.jpg" alt="Logo" width="300" height="100">
   </a>
 
-  <h3 align="center">revieWanted</h3>
+  <h3 align="center">VizArt</h3>
 
   <p align="center">
     Suche nach reviewbedürftigen Themengebieten
@@ -13,7 +13,7 @@
     <a href="https://gitlab.ti.bfh.ch/gaupa1/revieWanted"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://gitlab.ti.bfh.ch/gaupa1/revieWanted">View Demo</a>
+    <a href="https://vizart.tools>View Demo</a>
   </p>
 </div>
 

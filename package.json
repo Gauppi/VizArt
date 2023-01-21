@@ -2,7 +2,7 @@
   "name": "vizart",
   "version": "1.0.0",
   "description": "package for the project",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "jest"
   },
@@ -11,5 +11,12 @@
     "url": "https://gitlab.ti.bfh.ch/gaupa1/revieWanted.git"
   },
   "author": "david gaupp",
-  "license": "ISC"
+  "license": "ISC",
+  
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }
+
+  
+

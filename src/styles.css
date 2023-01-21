@@ -1,234 +1,308 @@
-h1{
-  color: rgb(0, 0, 0);
+h1 {
+	color: rgb(0, 0, 0);
 
-  margin-left: 10px;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 48px;
-  font-weight: 100;
-  line-height: 24px;
+	margin-left: 10px;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 48px;
+	font-weight: 100;
+	line-height: 24px;
 }
+
 h2 {
-  color: rgb(0, 0, 0);
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 32px;
-  font-weight: 100;
-  line-height: 24px;
-  text-align: justify;
+	color: rgb(0, 0, 0);
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 32px;
+	font-weight: 100;
+	line-height: 24px;
+	text-align: justify;
 	text-align-last: none;
 }
 
 h3 {
-  color: rgb(0, 0, 0);
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 20px;
+	color: rgb(0, 0, 0);
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 24px;
+}
+
+.knotenlegende {
+	margin-top: 1%;
+	margin-left: 20%;
+}
+/* Clear floats after the columns: */
+.knotenlegende:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.knotenlegende_titel {
+	margin-bottom: 0;
+}
+
+.knotenlegende_label {
+	color: rgb(0, 0, 0);
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 24px;
+	padding-left: 1%;
+	color: black;
+	background-color: #f7f4ff;
+	float: left;
+	width: 20%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5;
+}
+
+.results_img {
+	height: 0;
+}
+
+.contnr_0Hght_cntr {
+	text-align: center;
+	height: 0;
 }
 
 h4 {
-  color: rgb(0, 0, 0);
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 24px;
+	color: rgb(0, 0, 0);
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 24px;
 }
 
 
 
-#intro{
-  width: 60%;
-  background-color: #4b4b81;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  font-size: 20px;
-  color: white;
-  padding: 20px 20px 20px 20px;
+#intro {
+	width: 60%;
+	background-color: #e7e9ee;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	font-size: 24px;
+	color: black;
+	padding: 20px 20px 20px 20px;
 }
 
 #dataviz_basicZoom {
-  background-color: #ffffff;
-  border: 2px solid rgb(14, 13, 13);
+	background-color: #ffffff;
+	border: 2px solid rgb(14, 13, 13);
 }
 
 .header-img {
-  margin-left: 43%;
+	margin-top: -5%;
+	margin-bottom: 5%;
+	margin-left: 37%;
+	width: 25%;
+	height: 25%;
 
 }
 
-body{
-  background-color: #f7f4ff;
+body {
+	background-color: #f7f4ff;
 
 }
 
 
 .slogan {
-  margin-top: -50px;
-  font-size: 24px;
-  text-align: center;
-  width: 65%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50px;
-  background-color: #4b4b81;
-  color: white;
+	margin-top: -50px;
+	font-size: 24px;
+	text-align: center;
+	width: 65%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px;
+	background-color: #4b4b81;
+	color: white;
 }
 
-.box{
-  margin-left: 20%;
+.box {
+	margin-left: 20%;
+}
+
+#divInputText {
+	display: none;
 }
 
 input[type=file] {
-  box-sizing: border-box;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  border-radius: 4px;  
-  margin-left: 10px;
+	box-sizing: border-box;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	border-radius: 4px;
+	margin-left: 10px;
 }
 
 .fileinput {
-  width: 20%;
-  height: 120 px;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  display: inline-block;
-  padding: 6px 12px;
-  cursor: pointer;
-  margin-left: 10%;
-  
+	width: 20%;
+	height: 120 px;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	display: inline-block;
+	padding: 6px 12px;
+	cursor: pointer;
+	margin-left: 10%;
+
 }
 
 input[type=text] {
-  box-sizing: border-box;
-  border: 2px solid rgb(14, 13, 13);
-  color: black;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  border-radius: 4px;  
-  margin-left: 10%s;
+	box-sizing: border-box;
+	border: 2px solid rgb(14, 13, 13);
+	color: black;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	border-radius: 4 px;
+	margin-left: 2%;
 }
 
-.inputsearch{
-  width: 75%;
-  height: 70px;
-  background-image: url('/public/icons/query.png');
-  background-color: white;
-  background-size: 48px 48px;
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 20px 80px 24px 80px;
-  margin-top: 20px;
-  margin-left: 10px;
-  font-size: 30px;
-  text-align: left;
-  font-family: sans-serif;
+.inputsearch {
+	width: 75%;
+	height: 70px;
+	background-image: url('icons/query.png');
+	background-color: white;
+	background-size: 48px 48px;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 20px 80px 24px 80px;
+	margin-top: 20px;
+	margin-left: 10px;
+	font-size: 30px;
+	text-align: left;
+	font-family: sans-serif;
 }
 
 .links line {
-  stroke: rgb(126, 124, 124);
-  stroke-opacity: 0.6;
+	stroke: rgb(126, 124, 124);
+	stroke-opacity: 0.6;
 }
 
 .nodes circle {
-  stroke: #fff;
-  stroke-width: 1.5px;
+	stroke: #fff;
+	stroke-width: 1.5px;
 }
 
 text {
-  font-family: sans-serif;
-  font-size: 12px;
+	font-family: sans-serif;
+	font-size: 12px;
 }
 
 .center {
-  margin: auto;
-  width: 60%;
-  border-radius: 10px;
-  background: #e7e9ee;
-  margin-top: 10px;
-  padding: 5px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+	margin: auto;
+	width: 60%;
+	border-radius: 10px;
+	background: #e7e9ee;
+	margin-top: 10px;
+	padding: 5px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 p {
-  font-size: 24 px;
+	font-size: 24 px;
+}
+
+#btnadd {
+	background-color: #006A4E;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+#btndelete {
+	margin-left: 1%;
+	background-color: #DC143C;
 }
 
 input {
-  margin-top: 1rem;
-  width: 450px;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 20px;
-  font-style: italic;
-  
+	margin-top: 1rem;
+	width: 450px;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 20px;
+	font-style: italic;
+
 }
 
 input::file-selector-button {
-  background: #9cc4e4;
-  border-radius: 5px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-  word-break: break-word;
-  border: 0;
-  height: 60px;
-  margin-left: 5%;
+	background: #9cc4e4;
+	border-radius: 5px;
+	box-shadow: #5E5DF0 0 10px 20px -10px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 24px;
+	opacity: 1;
+	outline: 0 solid transparent;
+	padding: 8px 18px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: fit-content;
+	word-break: break-word;
+	border: 0;
+	height: 60px;
+	margin-left: 5%;
 }
 
 .buttonUpload {
-  background: #fbcbab;
-  border-radius: 5px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 15%;
-  word-break: break-word;
-  border: 0;
-  height: 60px;
-  margin-left: 30%;
+	background: #fbcbab;
+	border-radius: 5px;
+	box-shadow: #5E5DF0 0 10px 20px -10px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 24px;
+	opacity: 1;
+	outline: 0 solid transparent;
+	padding: 8px 18px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 15%;
+	word-break: break-word;
+	border: 0;
+	height: 60px;
+	margin-left: 30%;
 
-  margin-top: 1%;
+	margin-top: 1%;
 }
 
 label {
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 24px;
-  text-align: left;
-  width: 100%;
-  padding: 5px 50px 5px 25px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: #4b4b81;
-  color: white;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 24px;
+	text-align: left;
+	width: 100%;
+	padding: 5px 30px 5px 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+	cursor: default;
+	border-radius: 5px;
+	background-color: #4b4b81;
+	color: white;
+}
+
+.label_input{
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 24px;
+	text-align: left;
+	padding: 5px 30px 5px 25px;
+	background-color: #f7f4ff;
+	color: black;
+}
+
+.label_dropdown {
+	cursor: pointer;
 }
 
 .attributes {
-  	font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  	font-size: 20px;
-  	text-align: left;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 20px;
+	text-align: left;
 	color: black;
 	background-color: transparent;
 	margin-left: -10px;
@@ -236,77 +310,78 @@ label {
 }
 
 #publabel {
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 8px;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 8px;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 
 
-ul, li {
-    margin: 0;
-    padding: 0;
-    background-color: white;
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	background-color: white;
 }
 
 li {
-    padding: 0.5em;
+	padding: 0.5em;
 }
 
 .filters {
-    width: 420px;
-    box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.3);
-    padding: 0.1em;
-    position: absolute;
+	width: 420px;
+	box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.3);
+	padding: 0.1em;
+	position: absolute;
 }
 
 .filters__list li {
-    display: flex;
-    align-items: center;
-    user-select: none;
-    padding-bottom: 1em;
-    line-height: 0;
+	display: flex;
+	align-items: center;
+	user-select: none;
+	padding-bottom: 1em;
+	line-height: 0;
 }
 
 .filters__list li:last-child {
-  padding-bottom: 0;
+	padding-bottom: 0;
 }
 
 input[type="checkbox"] {
-    width: 40px;
-    height: 40px;
-    margin-right: 0.5em;
+	width: 40px;
+	height: 40px;
+	margin-right: 0.5em;
 }
 
 .filters:not(.filters--active) {
-    display: none;
+	display: none;
 }
 
 .btn_fi_send {
-  background: #9cc4e4;
-  border-radius: 5px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
-  padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 15%;
-  word-break: break-word;
-  border: 0;
-  height: 60px;
-  margin-left: 1%;
+	background: #9cc4e4;
+	border-radius: 5px;
+	box-shadow: #5E5DF0 0 10px 20px -10px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 24px;
+	opacity: 1;
+	outline: 0 solid transparent;
+	padding: 8px 18px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 15%;
+	word-break: break-word;
+	border: 0;
+	height: 60px;
+	margin-left: 2%;
 }
 
 /* Funktioniert nicht, macht Schatten um Button UND Text mit Namen des hochzuladenen files..!
@@ -316,52 +391,99 @@ input[type="checkbox"] {
 */
 
 .button {
-    background: #9cc4e4;
-    padding: 1em 2em;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    border: 0;
-    outline: 0;
-    text-align: left;
-    min-width: 150px;
-    min-height: 80px;
-    display: inline-flex;
-    justify-content: space-between;
-    color: #f5f5f5;
-    cursor: pointer;
+	background: #9cc4e4;
+	padding: 1em 2em;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	border: 0;
+	outline: 0;
+	text-align: left;
+	min-width: 150px;
+	min-height: 80px;
+	display: inline-flex;
+	justify-content: space-between;
+	color: #f5f5f5;
+	cursor: pointer;
 }
 
 .button::after {
-    font-family: sans-serif;
-    content: "▼";
-    padding-left: 0.5em;
+	font-family: sans-serif;
+	content: "▼";
+	padding-left: 0.5em;
 }
 
 .button--highlight::after {
-    content: "✓";
+	content: "✓";
+}
+
+.btn {
+	background-color: #4b4b81;
+	border: none;
+	color: white;
+	padding: 10px 14px;
+	border-radius: 25px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+/* Darker change background mouse-over */
+.btn:hover {
+	background-color: #fbcbab;
+}
+
+#btnreset{
+	visibility: hidden;
+}
+
+#btnresetRev{
+	visibility: hidden;
+}
+
+.btnTrash{
+	background-color: #4b4b81;
+	border: none;
+	color: white;
+	padding: 10px 14px;
+	border-radius: 25px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.btnTrash:hover{
+	background-color: #fbcbab;
+}
+
+
+#applyfilter {
+	background-color: #fbcbab;
+	color: black;
 }
 
 .filter-btn {
-  background: #fbcbab;
-  margin: 5px 5px;
-  min-width: 70px;
-  height: 50px;
-  font-weight: 200;
-  color: black;
+	background: #5E5DF0;
+	margin: 5px 5px;
+	min-width: 70px;
+	height: 50px;
+	font-weight: 200;
+	color: white;
 }
 
-#nresultsPubArt{
-  color: blue;
+#nresultsPubArt {
+	color: #5E5DF0;
 }
 
-#nresultsRev{
-  color: orange;
+#nresultsgraph {
+	color: black;
 }
+
+#nresultsRev {
+	color: orange;
+}
+
 .loader {
 	/* Loader modal/fullpage */
-  margin-top: -15%;
-  margin-top: -10%;
+	margin-top: -15%;
+	margin-top: -10%;
 	width: 100vw;
 	height: 100vh;
 	display: grid;
@@ -381,7 +503,7 @@ input[type="checkbox"] {
 	--y-2: calc(2 * (var(--f-w) + var(--f-g)));
 	--y-3: calc(3 * (var(--f-w) + var(--f-g)));
 	/* Colors: --c-$col-$row */
-	/* Colors were taken from Material Colors (c) */ 
+	/* Colors were taken from Material Colors (c) */
 	--c-1-1: #ffcdd2;
 	--c-1-2: #ef9a9a;
 	--c-1-3: #e57373;
@@ -404,18 +526,20 @@ input[type="checkbox"] {
 	/* Box size */
 	font-size: 10vmin;
 }
+
 .loader:before {
 	/* Label properties */
-	content: "loading";
-	color: #fafad2;
-	text-shadow: 0.5vmin 0.5vmin 0 #000;
-	font-family: fantasy;
+	content: "Nach Zitationen suchen ...";
+	color: #9cc4e4;
+	text-shadow: 0.5vmin 0.5vmin 0 #4b4b81;
+	font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
 	display: block;
-	width: 40vmin;
+	width: 140vmin;
 	height: 20vmin;
 	position: absolute;
 	text-align: center;
 }
+
 .loader:after {
 	display: block;
 	content: " ";
@@ -424,13 +548,13 @@ input[type="checkbox"] {
 	width: var(--f-w);
 	height: var(--f-w);
 	/* Initial position of the blocks */
-	box-shadow: 
-		var(--x-1) var(--y-3) var(--c-1-3), 
-		var(--x-1) var(--y-2) var(--c-1-2), 
+	box-shadow:
+		var(--x-1) var(--y-3) var(--c-1-3),
+		var(--x-1) var(--y-2) var(--c-1-2),
 		var(--x-2) var(--y-2) var(--c-2-2),
-		var(--x-3) var(--y-2) var(--c-3-2), 
+		var(--x-3) var(--y-2) var(--c-3-2),
 		var(--x-4) var(--y-2) var(--c-4-2),
-		var(--x-5) var(--y-2) var(--c-5-2), 
+		var(--x-5) var(--y-2) var(--c-5-2),
 		var(--x-6) var(--y-2) var(--c-6-2),
 		var(--x-6) var(--y-1) var(--c-6-1);
 	animation: 6s infinite loader;
@@ -439,222 +563,241 @@ input[type="checkbox"] {
 
 @keyframes loader {
 	0% {
-		box-shadow: 
+		box-shadow:
 			var(--x-1) var(--y-3) var(--c-1-3),
-			var(--x-1) var(--y-2) var(--c-1-2), 
+			var(--x-1) var(--y-2) var(--c-1-2),
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-3) var(--y-2) var(--c-3-2), 
+			var(--x-3) var(--y-2) var(--c-3-2),
 			var(--x-4) var(--y-2) var(--c-4-2),
-			var(--x-5) var(--y-2) var(--c-5-2), 
+			var(--x-5) var(--y-2) var(--c-5-2),
 			var(--x-6) var(--y-2) var(--c-6-2),
 			var(--x-6) var(--y-1) var(--c-6-1);
 	}
+
 	5% {
-		box-shadow: 
+		box-shadow:
 			var(--x-2) var(--y-3) var(--c-2-3),
-			var(--x-1) var(--y-2) var(--c-1-2), 
+			var(--x-1) var(--y-2) var(--c-1-2),
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-3) var(--y-2) var(--c-3-2), 
+			var(--x-3) var(--y-2) var(--c-3-2),
 			var(--x-4) var(--y-2) var(--c-4-2),
-			var(--x-5) var(--y-2) var(--c-5-2), 
+			var(--x-5) var(--y-2) var(--c-5-2),
 			var(--x-6) var(--y-2) var(--c-6-2),
 			var(--x-5) var(--y-1) var(--c-5-1);
 	}
+
 	10% {
-		box-shadow: 
+		box-shadow:
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-1) var(--y-2) var(--c-1-2), 
+			var(--x-1) var(--y-2) var(--c-1-2),
 			var(--x-2) var(--y-1) var(--c-2-1),
-			var(--x-3) var(--y-2) var(--c-3-2), 
-			var(--x-4) var(--y-2) var(--c-4-2),
-			var(--x-5) var(--y-3) var(--c-5-3), 
-			var(--x-6) var(--y-2) var(--c-6-2),
-			var(--x-5) var(--y-2) var(--c-5-2);
-	}
-	15% {
-		box-shadow: 
-			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-1) var(--y-2) var(--c-1-2), 
-			var(--x-3) var(--y-1) var(--c-3-1),
-			var(--x-3) var(--y-2) var(--c-3-2), 
-			var(--x-4) var(--y-2) var(--c-4-2),
-			var(--x-4) var(--y-3) var(--c-4-3), 
-			var(--x-6) var(--y-2) var(--c-6-2),
-			var(--x-5) var(--y-2) var(--c-5-2);
-	}
-	20% {
-		box-shadow: 
-			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-1) var(--y-2) var(--c-1-2), 
 			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-3) var(--y-3) var(--c-3-3), 
-			var(--x-4) var(--y-1) var(--c-4-1),
-			var(--x-4) var(--y-2) var(--c-4-2), 
+			var(--x-4) var(--y-2) var(--c-4-2),
+			var(--x-5) var(--y-3) var(--c-5-3),
 			var(--x-6) var(--y-2) var(--c-6-2),
 			var(--x-5) var(--y-2) var(--c-5-2);
 	}
+
+	15% {
+		box-shadow:
+			var(--x-2) var(--y-2) var(--c-2-2),
+			var(--x-1) var(--y-2) var(--c-1-2),
+			var(--x-3) var(--y-1) var(--c-3-1),
+			var(--x-3) var(--y-2) var(--c-3-2),
+			var(--x-4) var(--y-2) var(--c-4-2),
+			var(--x-4) var(--y-3) var(--c-4-3),
+			var(--x-6) var(--y-2) var(--c-6-2),
+			var(--x-5) var(--y-2) var(--c-5-2);
+	}
+
+	20% {
+		box-shadow:
+			var(--x-2) var(--y-2) var(--c-2-2),
+			var(--x-1) var(--y-2) var(--c-1-2),
+			var(--x-3) var(--y-2) var(--c-3-2),
+			var(--x-3) var(--y-3) var(--c-3-3),
+			var(--x-4) var(--y-1) var(--c-4-1),
+			var(--x-4) var(--y-2) var(--c-4-2),
+			var(--x-6) var(--y-2) var(--c-6-2),
+			var(--x-5) var(--y-2) var(--c-5-2);
+	}
+
 	25% {
 		box-shadow:
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-1) var(--y-2) var(--c-1-2), 
+			var(--x-1) var(--y-2) var(--c-1-2),
 			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-4) var(--y-3) var(--c-4-3), 
+			var(--x-4) var(--y-3) var(--c-4-3),
 			var(--x-3) var(--y-1) var(--c-3-1),
-			var(--x-4) var(--y-2) var(--c-4-2), 
+			var(--x-4) var(--y-2) var(--c-4-2),
 			var(--x-6) var(--y-2) var(--c-6-2),
 			var(--x-5) var(--y-2) var(--c-5-2);
 	}
+
 	30% {
-		box-shadow: 
+		box-shadow:
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-1) var(--y-2) var(--c-1-2), 
+			var(--x-1) var(--y-2) var(--c-1-2),
 			var(--x-3) var(--y-3) var(--c-3-3),
-			var(--x-4) var(--y-2) var(--c-4-2), 
+			var(--x-4) var(--y-2) var(--c-4-2),
 			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-4) var(--y-1) var(--c-4-1), 
+			var(--x-4) var(--y-1) var(--c-4-1),
 			var(--x-6) var(--y-2) var(--c-6-2),
 			var(--x-5) var(--y-2) var(--c-5-2);
 	}
+
 	35% {
-		box-shadow: 
+		box-shadow:
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-1) var(--y-2) var(--c-1-2), 
+			var(--x-1) var(--y-2) var(--c-1-2),
 			var(--x-2) var(--y-3) var(--c-2-3),
-			var(--x-4) var(--y-2) var(--c-4-2), 
+			var(--x-4) var(--y-2) var(--c-4-2),
 			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-5) var(--y-1) var(--c-5-1), 
+			var(--x-5) var(--y-1) var(--c-5-1),
 			var(--x-6) var(--y-2) var(--c-6-2),
 			var(--x-5) var(--y-2) var(--c-5-2);
 	}
+
 	40% {
-		box-shadow: 
+		box-shadow:
 			var(--x-2) var(--y-1) var(--c-2-1),
-			var(--x-1) var(--y-2) var(--c-1-2), 
+			var(--x-1) var(--y-2) var(--c-1-2),
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-4) var(--y-2) var(--c-4-2), 
+			var(--x-4) var(--y-2) var(--c-4-2),
 			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-5) var(--y-2) var(--c-5-2), 
+			var(--x-5) var(--y-2) var(--c-5-2),
 			var(--x-6) var(--y-2) var(--c-6-2),
 			var(--x-5) var(--y-3) var(--c-5-3);
 	}
+
 	45% {
-		box-shadow: 
+		box-shadow:
 			var(--x-1) var(--y-1) var(--c-1-1),
-			var(--x-1) var(--y-2) var(--c-1-2), 
+			var(--x-1) var(--y-2) var(--c-1-2),
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-4) var(--y-2) var(--c-4-2), 
+			var(--x-4) var(--y-2) var(--c-4-2),
 			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-5) var(--y-2) var(--c-5-2), 
+			var(--x-5) var(--y-2) var(--c-5-2),
 			var(--x-6) var(--y-2) var(--c-6-2),
 			var(--x-6) var(--y-3) var(--c-6-3);
 	}
+
 	50% {
-		box-shadow: 
+		box-shadow:
 			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-1) var(--y-3) var(--c-1-3), 
+			var(--x-1) var(--y-3) var(--c-1-3),
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-4) var(--y-2) var(--c-4-2), 
+			var(--x-4) var(--y-2) var(--c-4-2),
 			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-5) var(--y-2) var(--c-5-2), 
+			var(--x-5) var(--y-2) var(--c-5-2),
 			var(--x-6) var(--y-1) var(--c-6-1),
 			var(--x-6) var(--y-2) var(--c-6-2);
 	}
+
 	55% {
-		box-shadow: 
+		box-shadow:
 			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-2) var(--y-3) var(--c-2-3), 
+			var(--x-2) var(--y-3) var(--c-2-3),
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-4) var(--y-2) var(--c-4-2), 
+			var(--x-4) var(--y-2) var(--c-4-2),
 			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-5) var(--y-2) var(--c-5-2), 
+			var(--x-5) var(--y-2) var(--c-5-2),
 			var(--x-5) var(--y-1) var(--c-5-1),
 			var(--x-6) var(--y-2) var(--c-6-2);
 	}
+
 	60% {
-		box-shadow: 
+		box-shadow:
 			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-2) var(--y-2) var(--c-2-2), 
-			var(--x-2) var(--y-1) var(--c-2-1),
-			var(--x-4) var(--y-2) var(--c-4-2), 
-			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-5) var(--y-3) var(--c-5-3), 
-			var(--x-5) var(--y-2) var(--c-5-2),
-			var(--x-6) var(--y-2) var(--c-6-2);
-	}
-	65% {
-		box-shadow: 
-			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-2) var(--y-2) var(--c-2-2), 
-			var(--x-3) var(--y-1) var(--c-3-1),
-			var(--x-4) var(--y-2) var(--c-4-2), 
-			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-4) var(--y-3) var(--c-4-3), 
-			var(--x-5) var(--y-2) var(--c-5-2),
-			var(--x-6) var(--y-2) var(--c-6-2);
-	}
-	70% {
-		box-shadow: 
-			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-2) var(--y-2) var(--c-2-2), 
-			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-4) var(--y-1) var(--c-4-1), 
-			var(--x-3) var(--y-3) var(--c-3-3),
-			var(--x-4) var(--y-2) var(--c-4-2), 
-			var(--x-5) var(--y-2) var(--c-5-2),
-			var(--x-6) var(--y-2) var(--c-6-2);
-	}
-	75% {
-		box-shadow: 
-			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-2) var(--y-2) var(--c-2-2), 
-			var(--x-3) var(--y-2) var(--c-3-2),
-			var(--x-3) var(--y-1) var(--c-3-1), 
-			var(--x-4) var(--y-3) var(--c-4-3),
-			var(--x-4) var(--y-2) var(--c-4-2), 
-			var(--x-5) var(--y-2) var(--c-5-2),
-			var(--x-6) var(--y-2) var(--c-6-2);
-	}
-	80% {
-		box-shadow: 
-			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-2) var(--y-2) var(--c-2-2), 
-			var(--x-3) var(--y-3) var(--c-3-3),
-			var(--x-3) var(--y-2) var(--c-3-2), 
-			var(--x-4) var(--y-2) var(--c-4-2),
-			var(--x-4) var(--y-1) var(--c-4-1), 
-			var(--x-5) var(--y-2) var(--c-5-2),
-			var(--x-6) var(--y-2) var(--c-6-2);
-	}
-	85% {
-		box-shadow: 
-			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-2) var(--y-2) var(--c-2-2), 
-			var(--x-2) var(--y-3) var(--c-2-3),
-			var(--x-3) var(--y-2) var(--c-3-2), 
-			var(--x-4) var(--y-2) var(--c-4-2),
-			var(--x-5) var(--y-1) var(--c-5-1), 
-			var(--x-5) var(--y-2) var(--c-5-2),
-			var(--x-6) var(--y-2) var(--c-6-2);
-	}
-	90% {
-		box-shadow: 
-			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-2) var(--y-1) var(--c-2-1), 
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-3) var(--y-2) var(--c-3-2), 
+			var(--x-2) var(--y-1) var(--c-2-1),
 			var(--x-4) var(--y-2) var(--c-4-2),
-			var(--x-5) var(--y-2) var(--c-5-2), 
+			var(--x-3) var(--y-2) var(--c-3-2),
+			var(--x-5) var(--y-3) var(--c-5-3),
+			var(--x-5) var(--y-2) var(--c-5-2),
+			var(--x-6) var(--y-2) var(--c-6-2);
+	}
+
+	65% {
+		box-shadow:
+			var(--x-1) var(--y-2) var(--c-1-2),
+			var(--x-2) var(--y-2) var(--c-2-2),
+			var(--x-3) var(--y-1) var(--c-3-1),
+			var(--x-4) var(--y-2) var(--c-4-2),
+			var(--x-3) var(--y-2) var(--c-3-2),
+			var(--x-4) var(--y-3) var(--c-4-3),
+			var(--x-5) var(--y-2) var(--c-5-2),
+			var(--x-6) var(--y-2) var(--c-6-2);
+	}
+
+	70% {
+		box-shadow:
+			var(--x-1) var(--y-2) var(--c-1-2),
+			var(--x-2) var(--y-2) var(--c-2-2),
+			var(--x-3) var(--y-2) var(--c-3-2),
+			var(--x-4) var(--y-1) var(--c-4-1),
+			var(--x-3) var(--y-3) var(--c-3-3),
+			var(--x-4) var(--y-2) var(--c-4-2),
+			var(--x-5) var(--y-2) var(--c-5-2),
+			var(--x-6) var(--y-2) var(--c-6-2);
+	}
+
+	75% {
+		box-shadow:
+			var(--x-1) var(--y-2) var(--c-1-2),
+			var(--x-2) var(--y-2) var(--c-2-2),
+			var(--x-3) var(--y-2) var(--c-3-2),
+			var(--x-3) var(--y-1) var(--c-3-1),
+			var(--x-4) var(--y-3) var(--c-4-3),
+			var(--x-4) var(--y-2) var(--c-4-2),
+			var(--x-5) var(--y-2) var(--c-5-2),
+			var(--x-6) var(--y-2) var(--c-6-2);
+	}
+
+	80% {
+		box-shadow:
+			var(--x-1) var(--y-2) var(--c-1-2),
+			var(--x-2) var(--y-2) var(--c-2-2),
+			var(--x-3) var(--y-3) var(--c-3-3),
+			var(--x-3) var(--y-2) var(--c-3-2),
+			var(--x-4) var(--y-2) var(--c-4-2),
+			var(--x-4) var(--y-1) var(--c-4-1),
+			var(--x-5) var(--y-2) var(--c-5-2),
+			var(--x-6) var(--y-2) var(--c-6-2);
+	}
+
+	85% {
+		box-shadow:
+			var(--x-1) var(--y-2) var(--c-1-2),
+			var(--x-2) var(--y-2) var(--c-2-2),
+			var(--x-2) var(--y-3) var(--c-2-3),
+			var(--x-3) var(--y-2) var(--c-3-2),
+			var(--x-4) var(--y-2) var(--c-4-2),
+			var(--x-5) var(--y-1) var(--c-5-1),
+			var(--x-5) var(--y-2) var(--c-5-2),
+			var(--x-6) var(--y-2) var(--c-6-2);
+	}
+
+	90% {
+		box-shadow:
+			var(--x-1) var(--y-2) var(--c-1-2),
+			var(--x-2) var(--y-1) var(--c-2-1),
+			var(--x-2) var(--y-2) var(--c-2-2),
+			var(--x-3) var(--y-2) var(--c-3-2),
+			var(--x-4) var(--y-2) var(--c-4-2),
+			var(--x-5) var(--y-2) var(--c-5-2),
 			var(--x-5) var(--y-3) var(--c-5-3),
 			var(--x-6) var(--y-2) var(--c-6-2);
 	}
+
 	95% {
-		box-shadow: 
+		box-shadow:
 			var(--x-1) var(--y-2) var(--c-1-2),
-			var(--x-1) var(--y-1) var(--c-1-1), 
+			var(--x-1) var(--y-1) var(--c-1-1),
 			var(--x-2) var(--y-2) var(--c-2-2),
-			var(--x-3) var(--y-2) var(--c-3-2), 
+			var(--x-3) var(--y-2) var(--c-3-2),
 			var(--x-4) var(--y-2) var(--c-4-2),
-			var(--x-5) var(--y-2) var(--c-5-2), 
+			var(--x-5) var(--y-2) var(--c-5-2),
 			var(--x-6) var(--y-3) var(--c-6-3),
 			var(--x-6) var(--y-2) var(--c-6-2);
 	}
@@ -662,43 +805,48 @@ input[type="checkbox"] {
 
 
 p {
-  color: #0066FF;
-  font-family:arial;
-  font-size: 16px;
-  margin-top: 5px;
-  margin-left: 5px;
+	color: #0066FF;
+	font-family: arial;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 
 #a1 {
-  margin-left: 25px;
+	margin-left: 2%;
+	font-size: 20px;
+	font-weight: 600;
 }
 
-a:link, a:visited {
-  background-color: #7c67dd;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+a:link,
+a:visited {
+	background-color: #7c67dd;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 }
 
-a:hover, a:active {
-  background-color: #fbcbab;
+a:hover,
+a:active {
+	background-color: #fbcbab;
 }
 
 footer {
-  margin-top: 2%;
-  color: white;
+	margin-top: 2%;
+	color: white;
 }
-#outro{
-  width: 60%;
-  background-color: #e7e9ee;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50px;
-  font-size: 20px;
-  color: white;
-  padding: 20px 20px 20px 20px;
+
+#outro {
+	width: 60%;
+	background-color: #e7e9ee;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50px;
+	font-size: 20px;
+	color: white;
+	padding: 20px 20px 20px 20px;
 }
 
 
@@ -707,31 +855,37 @@ footer {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
+	font-size: 24px;
 }
+
 .arrowpopup .tooltipText {
 	visibility: hidden;
-	width: 200px;
-	background-color: #856;
-	color: white;
+	width: 260px;
+	background-color: #9cc4e4;
+	color: black;
 	text-align: center;
 	border-radius: 4px;
-	padding: 9px ;
+	padding: 9px;
 	position: absolute;
+	font-size: 18px;
 	bottom: 150%;
-	left: 50%;
-	margin-left: -85px;
 }
+
 .arrowpopup .tooltipText::after {
 	content: "";
 	position: absolute;
 	top: 100%;
-	left: 50%;
+	right: 100%;
 	margin-left: -5px;
 	border-width: 5px;
 	border-style: solid;
-	border-color: #856 transparent transparent transparent;
+	border-color: #9cc4e4 transparent transparent transparent;
 }
+
 .arrowpopup .show {
 	visibility: visible;
 }
-	
+
+li {
+	background-color: #f7f4ff;
+}

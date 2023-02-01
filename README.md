@@ -10,7 +10,7 @@
   <p align="center">
     Suche nach reviewbedürftigen Themengebieten
     <br />
-    <a href="https://gitlab.ti.bfh.ch/gaupa1/revieWanted"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Gauppi/VizArt.git"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://vizart.tools>View Demo</a>
@@ -88,12 +88,12 @@ _Im Folgenden finden Sie ein Beispiel dafür, wie die Installation und Einrichtu
 
 1. Klonen des Repositories
     ```sh
-   git clone https://gitlab.ti.bfh.ch/gaupa1/revieWanted
+   git clone https://github.com/Gauppi/VizArt.git
    ```
    This is an example of how to clone the gitLab repository.
 * Oder kopieren Sie den GitLab Link (GitHub Desktop App)
  ```sh
-  https://gitlab.ti.bfh.ch/gaupa1/revieWanted
+  https://github.com/Gauppi/VizArt.git
   ```
 
 2. Öffnen der index.html Datei über den Browser 
@@ -135,7 +135,7 @@ _Für mehr Inforamtionen lesen Sie bitte die technische Dokumentation_
     - [X] Suchanfrage (Text)
     - [X] File-Upload (txt)
 - [X] Export Funktion
-- [ ] Interpretationsfunktion
+- [X] Interpretationsfunktion
 - [ ] Usability Test
 
 
@@ -154,7 +154,7 @@ _Für mehr Inforamtionen lesen Sie bitte die technische Dokumentation_
 ## Kontakt
 
 David Gaupp - gaupa1@bfh.ch
-CHristian Merz - christian.merz@students.bfh.ch
+Christian Merz - christian.merz@students.bfh.ch
 
 Project Link: [https://github.com/gauppi/revieWanted](https://github.com/Gauppi/revieWanted)
 
